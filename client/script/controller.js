@@ -5,6 +5,10 @@ var ADD = "adding";
 var SUBTRACT = "subtracting";
 var ADD_TOKEN = "+";
 var SUBTRACT_TOKEN = "-";
+var MULT = "mult";
+var MULT_TOKEN = "*";
+var DIV = "div";
+var DIV_TOKEN = "/";
 app.controller('calculator', function ($scope) {
     $scope.output = "0";
     $scope.newNumber = true;
@@ -38,6 +42,34 @@ app.controller('calculator', function ($scope) {
         $scope.newNumber = true;
         $scope.pendingValue = null;
     };
+    $scope.div = function () {
+        if ($scope.pendingValue) {
+            if ($scope.runningTotal && $scope.pendingOperation == DIV) {
+                $scope.runningTotal /= $scope.pendingValue;
+            } else {
+                $scope.runningTotal = $scope.pendingValue;
+            }
+        }
+        setOperationToken(DIV);
+        setOutput(String($scope.runningTotal));
+        $scope.pendingOperation = DIV;
+        $scope.newNumber = true;
+        $scope.pendingValue = null;
+    };
+    $scope.mult = function () {
+        if ($scope.pendingValue) {
+            if ($scope.runningTotal && $scope.pendingOperation == MULT) {
+                $scope.runningTotal *= $scope.pendingValue;
+            } else {
+                $scope.runningTotal = $scope.pendingValue;
+            }
+        }
+        setOperationToken(MULT);
+        setOutput(String($scope.runningTotal));
+        $scope.pendingOperation = MULT;
+        $scope.newNumber = true;
+        $scope.pendingValue = null;
+    };
     $scope.subtract = function () {
         if ($scope.pendingValue) {
             if ($scope.runningTotal && ($scope.pendingOperation == SUBTRACT)) {
@@ -65,6 +97,12 @@ app.controller('calculator', function ($scope) {
         } else if ($scope.pendingOperation == SUBTRACT) {
             $scope.runningTotal -= $scope.pendingValue;
             $scope.lastOperation = SUBTRACT;
+        } else if ($scope.pendingOperation == MULT) {
+            $scope.runningTotal *= $scope.pendingValue;
+            $scope.lastOperation = MULT;
+        } else if ($scope.pendingOperation == DIV) {
+            $scope.runningTotal /= $scope.pendingValue;
+            $scope.lastOperation = DIV;
         } else {
             if ($scope.lastOperation) {
                 if ($scope.lastOperation == ADD) {
