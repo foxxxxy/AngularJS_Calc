@@ -1,0 +1,160 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:600,400);
+/* line 5, ../../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 4, ../scss/_base.scss */
+body h1 {
+  margin-top: 20px;
+  font-family: "Helvetica", sans-serif;
+  font-weight: 300;
+  font-size: 42px;
+  text-align: center;
+  color: #1769a4;
+}
+/* line 12, ../scss/_base.scss */
+body p {
+  padding-top: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: #6c6c6c;
+  text-align: center;
+}
+/* line 21, ../scss/_base.scss */
+body .calc-body {
+  margin-top: 50px;
+  text-align: center;
+  background-color: #efefef;
+  border: 1px solid #babcbd;
+  text-shadow: 0 1px 1px rgba(150, 150, 150, 0.5);
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -moz-box-shadow: 0 6px 4px -4px rgba(0, 0, 0, 0.35);
+  -webkit-box-shadow: 0 6px 4px -4px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 6px 4px -4px rgba(0, 0, 0, 0.35);
+}
+/* line 31, ../scss/_base.scss */
+body .calc-body .wrapper .output {
+  margin: 15px 50px;
+  height: auto;
+  line-height: 85px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  background: rgba(23, 105, 164, 0.25);
+  border: 1px solid #babcbd;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+/* line 43, ../scss/_base.scss */
+body .calc-body .buttons {
+  font-size: 0;
+  margin: 25px 0;
+}
+/* line 46, ../scss/_base.scss */
+body .calc-body .buttons button {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  display: inline-block;
+  margin: 10px;
+  color: #494a4a;
+  background-color: #efefef;
+  border: 1px solid #babcbd;
+  height: auto;
+  min-height: 50px;
+  line-height: 50px;
+  width: auto;
+  min-width: 50px;
+  text-shadow: 0 1px 1px rgba(150, 150, 150, 0.5);
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFFFFFFF', endColorstr='#FF000000');
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwLjE1Ii8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuMTUiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255, 255, 255, 0.15)), color-stop(100%, rgba(0, 0, 0, 0.15)));
+  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%);
+  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%);
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -moz-box-shadow: 0 6px 4px -4px rgba(0, 0, 0, 0.35);
+  -webkit-box-shadow: 0 6px 4px -4px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 6px 4px -4px rgba(0, 0, 0, 0.35);
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 400ms;
+  -o-transition-duration: 400ms;
+  -webkit-transition-duration: 400ms;
+  transition-duration: 400ms;
+}
+/* line 68, ../scss/_base.scss */
+body .calc-body .buttons button:hover {
+  background: rgba(23, 105, 164, 0.25);
+}
